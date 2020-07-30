@@ -1,0 +1,6 @@
+2020-07-30 08:29:44.807  INFO 19840 --- [restartedMain] com.zhongruan.NewsApplication            : Starting NewsApplication on DESKTOP-VH50B4C with PID 19840 (C:\Users\1\Desktop\code\3\news\target\classes started by 1 in C:\Users\1\Desktop\code\3\news)
+2020-07-30 08:29:44.816  INFO 19840 --- [restartedMain] com.zhongruan.NewsApplication            : No active profile set, falling back to default profiles: default
+2020-07-30 08:29:44.887  INFO 19840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-30 08:29:44.888  INFO 19840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-30 08:29:46.296  INFO 19840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-30 08:29:46.651  INFO 19840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 282ms. Found 2 JPA repository interfaces.
