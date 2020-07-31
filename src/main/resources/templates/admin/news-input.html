@@ -73,7 +73,7 @@
             <textarea placeholder="新闻内容" name="content" style="display: none" th:text="*{content}"></textarea>
           </div>
         </div>
-
+        <!-- ==============================================-->
         <div class="two fields">
           <div class="required field">
             <div class="ui left labeled action input">
@@ -93,7 +93,8 @@
             <div class="ui left labeled action input">
               <label class="ui compact teal basic label">标签</label>
               <div class="ui fluid selection multiple search  dropdown">
-                <input type="hidden" name="tagIds" th:value="*{tagIds}" >
+                <!-- 该隐藏域的value =  div的标签的自定义值(data-value)  -->
+                <input type="hidden" name="tagIds" th:value="*{tagIds}" value="1" >
                 <i class="dropdown icon"></i>
                 <div class="default text">标签</div>
                 <div class="menu">
@@ -104,6 +105,7 @@
             </div>
           </div>
         </div>
+        <!-- ========================================-->
 
         <div class="required field">
           <div class="ui left labeled input">

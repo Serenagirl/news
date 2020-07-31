@@ -20,7 +20,7 @@ public class TypeController {
     @Autowired
     TypeService typeService;
 
-    @GetMapping("/types")
+    @GetMapping("/types")//根据id来进行分类排序 使用降序 只是定义数据显示的方式 DESC后面是传入对象
     public String types(Model model, @PageableDefault(size = 5, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
         // model.addAttribute("list", typeService.listType());
         Page<Type> page = typeService.listType(pageable);
@@ -48,7 +48,7 @@ public class TypeController {
         return "redirect:/admin/types";
     }*/
 
-    // 后端的校验
+    // 后端的校验 判断是否存在重复分类 添加操作
     @PostMapping("/types/add")
     public String post(Type type, BindingResult result, RedirectAttributes attributes) {
         // 查找是否有同名的类别

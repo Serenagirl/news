@@ -3,11 +3,13 @@ package com.zhongruan.service.impl;
 import com.zhongruan.entity.Tag;
 import com.zhongruan.repository.TagRepository;
 import com.zhongruan.service.TagService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
+import org.springframework.data.domain.Sort;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,6 +66,44 @@ public class TagServiceImpl implements TagService {
     @Override
     public Tag getTagById(long id) {
         return tagRepository.getOne(id);
+    }
+
+    @Override
+    public Tag getTag(Long id) {
+        return tagRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public Tag updateTag(Long id, Tag tag) {
+        Tag tag1 = tagRepository.findById(id).orElse(null);
+        if (tag1==null){
+            System.out.println("未获得更新对象");
+            return null;
+        }
+        BeanUtils.copyProperties(tag, tag1);
+        return tagRepository.save(tag1);
+
+    }
+
+
+    @Override
+    public List<Tag> listTagTop(Integer size) {
+        Sort sort = Sort.by(Sort.Direction.DESC,"newsList.size");
+        Pageable pageable = PageRequest.of(0, size, sort);
+        return tagRepository.findTop(pageable);
+    }
+
+    private List<Long> convertTolist(String ids){
+        System.out.println("service接收ids为，"+ids);
+        List<Long> list = new ArrayList<>();
+        if (!"".equals(ids) && ids!=null){
+            String[] idArray = ids.split(",");
+            for (int i=0;i<idArray.length;i++){
+                list.add(new Long(idArray[i]));
+            }
+        }
+        System.out.println("service中处理完成后的id list"+list);
+        return list;
     }
 
 }

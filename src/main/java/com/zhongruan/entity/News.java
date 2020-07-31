@@ -8,7 +8,6 @@ import java.util.List;
 @Entity
 @Table(name = "t_news")
 public class News {
-
     @Id
     @GeneratedValue
     private Long id;
@@ -45,6 +44,24 @@ public class News {
     private String tagIds;
 
     private String description;
+
+    // 将数据准备就绪
+    public void init() {
+        this.tagIds = tagsToIds(this.tags);
+    }
+
+    public String tagsToIds(List<Tag> tags) {
+        // [1, 2, 3] ===>  1,2,3,
+        // String类的内容不可改变的  StringBuffer内容是可以改变的  StringBuilder 是线程不安全的
+        StringBuffer ids = new StringBuffer();
+        if (!tags.isEmpty()) {
+            for (Tag tag : tags) {
+                ids.append(tag.getId());
+                ids.append(",");
+            }
+        }
+        return ids.toString();
+    }
 
     public News() {
     }
@@ -204,28 +221,6 @@ public class News {
         this.description = description;
     }
 
-    public void init() {
-        this.tagIds = tagsToIds(this.getTags());
-    }
-
-    //1,2,3
-    private String tagsToIds(List<Tag> tags) {
-        if (!tags.isEmpty()) {
-            StringBuffer ids = new StringBuffer();
-            boolean flag = false;
-            for (Tag tag : tags) {
-                if (flag) {
-                    ids.append(",");
-                } else {
-                    flag = true;
-                }
-                ids.append(tag.getId());
-            }
-            return ids.toString();
-        } else {
-            return tagIds;
-        }
-    }
 
 
     @Override
@@ -253,24 +248,4 @@ public class News {
                 '}';
     }
 
-    public void initTags(Long id) {
-        //3,4,5
-        List<Tag> tags = this.getTags();
-        StringBuffer ids=new StringBuffer();
-        if(!tags.isEmpty()){
-            Boolean flag=false;
-            for(Tag t:tags){
-                if(flag){
-                    ids.append(t.getId());
-                    flag=true;
-                }else {
-                    ids.append(",");
-                    ids.append(t.getId());
-                }
-
-            }
-            this.setTagIds(ids.toString());
-        }
-
-    }
 }

@@ -1,0 +1,128 @@
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find java src paths:  [C:\Users\1\Desktop\code\news\src\main\java\]
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: project type not set, try to figure out...
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start find controllers in path : C:\Users\1\Desktop\code\news\src\main\java\
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : IndexController.java
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : LoginController.java
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : NewController.java
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : TagController.java
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : TypeController.java
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : IndexController.java
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : IndexController.java
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : LoginController.java
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : LoginController.java
+七月 31, 2020 7:58:25 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : NewController.java
+七月 31, 2020 7:58:26 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : NewController.java
+七月 31, 2020 7:58:26 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : TagController.java
+七月 31, 2020 7:58:26 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : TagController.java
+七月 31, 2020 7:58:26 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : TypeController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : TypeController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs start...
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\IndexController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\IndexController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\LoginController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\LoginController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\NewController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\NewController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\TagController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\TagController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\TypeController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\TypeController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index start !!!
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index done !!!
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs done !!!
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find java src paths:  [C:\Users\1\Desktop\code\news\src\main\java\]
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: project type not set, try to figure out...
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start find controllers in path : C:\Users\1\Desktop\code\news\src\main\java\
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : IndexController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : LoginController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : NewController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : TagController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : TypeController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : IndexController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : IndexController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : LoginController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : LoginController.java
+七月 31, 2020 7:58:27 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : NewController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : NewController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : TagController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : TagController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : TypeController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : TypeController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs start...
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\IndexController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\IndexController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\LoginController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\LoginController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\NewController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\NewController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\TagController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\TagController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\TypeController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : C:\Users\1\Desktop\code\news\src\main\java\com\zhongruan\web\admin\TypeController.java
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index start !!!
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index done !!!
+七月 31, 2020 7:58:28 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs done !!!
