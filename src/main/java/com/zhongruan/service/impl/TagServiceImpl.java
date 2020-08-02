@@ -8,8 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,6 +70,12 @@ public class TagServiceImpl implements TagService {
     }
 
     @Override
+    public List<Tag> listTagTop(int i) {
+        Pageable pageable = PageRequest.of(0, i, Sort.by(Sort.Direction.DESC, "newsList.size"));
+        return tagRepository.findTop(pageable);
+    }
+
+    @Override
     public Tag getTag(Long id) {
         return tagRepository.findById(id).orElse(null);
     }
@@ -83,14 +90,6 @@ public class TagServiceImpl implements TagService {
         BeanUtils.copyProperties(tag, tag1);
         return tagRepository.save(tag1);
 
-    }
-
-
-    @Override
-    public List<Tag> listTagTop(Integer size) {
-        Sort sort = Sort.by(Sort.Direction.DESC,"newsList.size");
-        Pageable pageable = PageRequest.of(0, size, sort);
-        return tagRepository.findTop(pageable);
     }
 
     private List<Long> convertTolist(String ids){

@@ -24,12 +24,14 @@ public interface TagService {
 
     Tag getTagById(long id);
 
+    // 8.2
+    // 查找数据量前n的标签
+    List<Tag> listTagTop(int i);
+
     //获取标签
     Tag getTag(Long id);
     //更新标签 后保存
     Tag updateTag(Long id,Tag tag);
 
-    //获取标签排序
-    List<Tag> listTagTop(Integer size);
 
 }

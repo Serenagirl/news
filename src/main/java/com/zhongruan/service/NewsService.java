@@ -26,6 +26,21 @@ public interface NewsService {
     // 根据id查找news
     News getNewsById(Long id);
 
+    // 更新时间前i个推荐新闻
+    List<News> listRecommendNewsTop(int i);
+
+    // 带查询条件(多匹配)的分页
+    Page<News> listNews(String query, Pageable pageable);
+
+    //查询新闻 新闻管理页面，组合条件查询新闻列表
+    Page<News> listNew(Pageable pageable, NewQuery newQuery);
+
+    News saveNew(News news);
+
+    News getNew(Long id);
+
+    News updateNew(Long id,News news);
+
     //删除接口 传个id就行了
     void deleteNew(Long id);
 
@@ -38,7 +53,12 @@ public interface NewsService {
     //全局搜索
     Page<News> listNew(String query,Pageable pageable);
 
+
+
     //处理Mrakdown
     News getAndConvert(Long id);
+
+    //标签页面查看新闻
+    Page<News> listNew(Long tagId,Pageable pageable);
 
 }
